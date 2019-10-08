@@ -84,7 +84,7 @@ export class ChatBoxComponent implements OnInit  {
   //      return true;
   //    }
   // } // end checkStatus
-     public verifyUserConfirmation : any = ()=>{
+     public verifyUserConfirmation :any = ()=>{
         this.socketService.verifyUser().subscribe((data)=>{
           this.disconnectedSocket = false;
           this.socketService.setUser(this.authToken);
